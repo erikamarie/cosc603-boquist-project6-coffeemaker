@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../.resources/report.gif" type="image/gif"/><title>CoffeeMakerTest.java</title><link rel="stylesheet" href="../../../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="right"><a href="../../../.sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">edu.towson.cosc603.coffeemaker (Apr 17, 2013 11:45:34 AM)</a> &gt; <a href="../../index.html" class="el_group">CoffeeMaker</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.html" class="el_package">edu.towson.cosc603.coffeemaker</a> &gt; <span class="el_source">CoffeeMakerTest.java</span></div><h1>CoffeeMakerTest.java</h1><pre class="source lang-java linenums">package edu.towson.cosc603.coffeemaker;
+
+import java.io.PrintStream;
+import org.junit.Assert;
+import org.junit.Test;
+
+<span class="fc" id="L7">public class CoffeeMakerTest</span>
+{
+  @Test
+  public void checkOptions()
+  {
+<span class="fc" id="L12">    CoffeeMaker testCoffeeMaker = new CoffeeMaker();</span>
+<span class="fc" id="L13">  }</span>
+
+  @Test
+  public void addRecipe1()
+  {
+<span class="fc" id="L18">    CoffeeMaker testCoffeeMaker = new CoffeeMaker();</span>
+<span class="fc" id="L19">    Recipe testRecipe = new Recipe();</span>
+
+<span class="fc" id="L21">    testRecipe.setName(&quot;Coffee&quot;);</span>
+<span class="fc" id="L22">    testRecipe.setPrice(5);</span>
+<span class="fc" id="L23">    testRecipe.setAmtCoffee(2);</span>
+<span class="fc" id="L24">    testRecipe.setAmtMilk(2);</span>
+<span class="fc" id="L25">    testRecipe.setAmtSugar(2);</span>
+<span class="fc" id="L26">    testRecipe.setAmtChocolate(2);</span>
+
+<span class="fc" id="L28">    Assert.assertTrue(testCoffeeMaker.addRecipe(testRecipe));</span>
+<span class="fc" id="L29">  }</span>
+
+  @Test
+  public void addRecipe1E1()
+  {
+<span class="fc" id="L34">    CoffeeMaker testCoffeeMaker = new CoffeeMaker();</span>
+<span class="fc" id="L35">    Recipe testRecipe1 = new Recipe();</span>
+<span class="fc" id="L36">    Recipe testRecipe2 = new Recipe();</span>
+<span class="fc" id="L37">    Recipe testRecipe3 = new Recipe();</span>
+<span class="fc" id="L38">    Recipe testRecipe4 = new Recipe();</span>
+<span class="fc" id="L39">    Recipe testRecipe5 = new Recipe();</span>
+
+<span class="fc" id="L41">    testRecipe1.setName(&quot;Coffee1&quot;);</span>
+<span class="fc" id="L42">    testRecipe1.setPrice(5);</span>
+<span class="fc" id="L43">    testRecipe1.setAmtCoffee(2);</span>
+<span class="fc" id="L44">    testRecipe1.setAmtMilk(2);</span>
+<span class="fc" id="L45">    testRecipe1.setAmtSugar(2);</span>
+<span class="fc" id="L46">    testRecipe1.setAmtChocolate(2);</span>
+<span class="fc" id="L47">    testRecipe2.setName(&quot;Coffee2&quot;);</span>
+<span class="fc" id="L48">    testRecipe2.setPrice(5);</span>
+<span class="fc" id="L49">    testRecipe2.setAmtCoffee(2);</span>
+<span class="fc" id="L50">    testRecipe2.setAmtMilk(2);</span>
+<span class="fc" id="L51">    testRecipe2.setAmtSugar(2);</span>
+<span class="fc" id="L52">    testRecipe2.setAmtChocolate(2);</span>
+<span class="fc" id="L53">    testRecipe3.setName(&quot;Coffee3&quot;);</span>
+<span class="fc" id="L54">    testRecipe3.setPrice(5);</span>
+<span class="fc" id="L55">    testRecipe3.setAmtCoffee(2);</span>
+<span class="fc" id="L56">    testRecipe3.setAmtMilk(2);</span>
+<span class="fc" id="L57">    testRecipe3.setAmtSugar(2);</span>
+<span class="fc" id="L58">    testRecipe3.setAmtChocolate(2);</span>
+<span class="fc" id="L59">    testRecipe4.setName(&quot;Coffee4&quot;);</span>
+<span class="fc" id="L60">    testRecipe4.setPrice(5);</span>
+<span class="fc" id="L61">    testRecipe4.setAmtCoffee(2);</span>
+<span class="fc" id="L62">    testRecipe4.setAmtMilk(2);</span>
+<span class="fc" id="L63">    testRecipe4.setAmtSugar(2);</span>
+<span class="fc" id="L64">    testRecipe4.setAmtChocolate(2);</span>
+<span class="fc" id="L65">    testRecipe5.setName(&quot;Coffee5&quot;);</span>
+<span class="fc" id="L66">    testRecipe5.setPrice(5);</span>
+<span class="fc" id="L67">    testRecipe5.setAmtCoffee(2);</span>
+<span class="fc" id="L68">    testRecipe5.setAmtMilk(2);</span>
+<span class="fc" id="L69">    testRecipe5.setAmtSugar(2);</span>
+<span class="fc" id="L70">    testRecipe5.setAmtChocolate(2);</span>
+
+<span class="fc" id="L72">    Assert.assertTrue(testCoffeeMaker.addRecipe(testRecipe1));</span>
+<span class="fc" id="L73">    Assert.assertTrue(testCoffeeMaker.addRecipe(testRecipe2));</span>
+<span class="fc" id="L74">    Assert.assertTrue(testCoffeeMaker.addRecipe(testRecipe3));</span>
+<span class="fc" id="L75">    Assert.assertTrue(testCoffeeMaker.addRecipe(testRecipe4));</span>
+<span class="fc" id="L76">    Assert.assertFalse(testCoffeeMaker.addRecipe(testRecipe5));</span>
+<span class="fc" id="L77">  }</span>
+
+  @Test
+  public void addRecipe1E2()
+  {
+<span class="fc" id="L82">    CoffeeMaker testCoffeeMaker = new CoffeeMaker();</span>
+<span class="fc" id="L83">    Recipe testRecipe1 = new Recipe();</span>
+<span class="fc" id="L84">    Main testMain = new Main();</span>
+
+<span class="fc" id="L86">    Assert.assertEquals(-1L, Main.stringToInt(&quot;$%&quot;));</span>
+<span class="fc" id="L87">  }</span>
+
+  @Test
+  public void addRecipe1E3()
+  {
+<span class="fc" id="L92">    Assert.assertEquals(-1L, Main.stringToInt(&quot;$%&quot;));</span>
+<span class="fc" id="L93">  }</span>
+
+  @Test
+  public void addRecipe1E4()
+  {
+<span class="fc" id="L98">    Assert.assertEquals(-1L, Main.stringToInt(&quot;-1&quot;));</span>
+<span class="fc" id="L99">  }</span>
+
+  @Test
+  public void addRecipe1E5()
+  {
+<span class="fc" id="L104">    CoffeeMaker testCoffeeMaker = new CoffeeMaker();</span>
+<span class="fc" id="L105">    Recipe testRecipe1 = new Recipe();</span>
+<span class="fc" id="L106">    Recipe testRecipe2 = new Recipe();</span>
+
+<span class="fc" id="L108">    testRecipe1.setName(&quot;Coffee1&quot;);</span>
+<span class="fc" id="L109">    testRecipe1.setPrice(5);</span>
+<span class="fc" id="L110">    testRecipe1.setAmtCoffee(2);</span>
+<span class="fc" id="L111">    testRecipe1.setAmtMilk(2);</span>
+<span class="fc" id="L112">    testRecipe1.setAmtSugar(2);</span>
+<span class="fc" id="L113">    testRecipe1.setAmtChocolate(2);</span>
+<span class="fc" id="L114">    testRecipe2.setName(&quot;Coffee1&quot;);</span>
+<span class="fc" id="L115">    testRecipe2.setPrice(5);</span>
+<span class="fc" id="L116">    testRecipe2.setAmtCoffee(2);</span>
+<span class="fc" id="L117">    testRecipe2.setAmtMilk(2);</span>
+<span class="fc" id="L118">    testRecipe2.setAmtSugar(2);</span>
+<span class="fc" id="L119">    testRecipe2.setAmtChocolate(2);</span>
+
+<span class="fc" id="L121">    Assert.assertTrue(testCoffeeMaker.addRecipe(testRecipe1));</span>
+<span class="fc" id="L122">    Assert.assertFalse(testCoffeeMaker.addRecipe(testRecipe2));</span>
+<span class="fc" id="L123">  }</span>
+
+  @Test
+  public void deleteRecipe1()
+  {
+<span class="fc" id="L128">    CoffeeMaker testCoffeeMaker = new CoffeeMaker();</span>
+<span class="fc" id="L129">    Recipe testRecipe1 = new Recipe();</span>
+
+<span class="fc" id="L131">    testRecipe1.setName(&quot;Coffee1&quot;);</span>
+<span class="fc" id="L132">    testRecipe1.setPrice(5);</span>
+<span class="fc" id="L133">    testRecipe1.setAmtCoffee(2);</span>
+<span class="fc" id="L134">    testRecipe1.setAmtMilk(2);</span>
+<span class="fc" id="L135">    testRecipe1.setAmtSugar(2);</span>
+<span class="fc" id="L136">    testRecipe1.setAmtChocolate(2);</span>
+
+<span class="fc" id="L138">    Assert.assertTrue(testCoffeeMaker.addRecipe(testRecipe1));</span>
+<span class="fc" id="L139">    Assert.assertTrue(testCoffeeMaker.deleteRecipe(testRecipe1));</span>
+<span class="fc" id="L140">  }</span>
+
+  @Test
+  public void deleteRecipe1E1()
+  {
+<span class="fc" id="L145">    CoffeeMaker testCoffeeMaker = new CoffeeMaker();</span>
+<span class="fc" id="L146">    Recipe testRecipe1 = new Recipe();</span>
+
+<span class="fc" id="L148">    testRecipe1.setName(&quot;Coffee1&quot;);</span>
+<span class="fc" id="L149">    testRecipe1.setPrice(5);</span>
+<span class="fc" id="L150">    testRecipe1.setAmtCoffee(2);</span>
+<span class="fc" id="L151">    testRecipe1.setAmtMilk(2);</span>
+<span class="fc" id="L152">    testRecipe1.setAmtSugar(2);</span>
+<span class="fc" id="L153">    testRecipe1.setAmtChocolate(2);</span>
+
+<span class="fc" id="L155">    Assert.assertTrue(testCoffeeMaker.addRecipe(testRecipe1));</span>
+<span class="fc" id="L156">    Assert.assertTrue(testCoffeeMaker.deleteRecipe(testRecipe1));</span>
+<span class="fc" id="L157">  }</span>
+
+  @Test
+  public void editRecipe1()
+  {
+<span class="fc" id="L162">    CoffeeMaker testCoffeeMaker = new CoffeeMaker();</span>
+<span class="fc" id="L163">    Recipe testRecipe1 = new Recipe();</span>
+<span class="fc" id="L164">    Recipe testRecipe2 = new Recipe();</span>
+
+<span class="fc" id="L166">    testRecipe1.setName(&quot;Coffee1&quot;);</span>
+<span class="fc" id="L167">    testRecipe1.setPrice(5);</span>
+<span class="fc" id="L168">    testRecipe1.setAmtCoffee(2);</span>
+<span class="fc" id="L169">    testRecipe1.setAmtMilk(2);</span>
+<span class="fc" id="L170">    testRecipe1.setAmtSugar(2);</span>
+<span class="fc" id="L171">    testRecipe1.setAmtChocolate(2);</span>
+
+<span class="fc" id="L173">    testRecipe2.setName(&quot;Coffee1&quot;);</span>
+<span class="fc" id="L174">    testRecipe2.setPrice(5);</span>
+<span class="fc" id="L175">    testRecipe2.setAmtCoffee(2);</span>
+<span class="fc" id="L176">    testRecipe2.setAmtMilk(2);</span>
+<span class="fc" id="L177">    testRecipe2.setAmtSugar(2);</span>
+<span class="fc" id="L178">    testRecipe2.setAmtChocolate(2);</span>
+
+<span class="fc" id="L180">    Assert.assertTrue(testCoffeeMaker.addRecipe(testRecipe1));</span>
+<span class="fc" id="L181">    Assert.assertTrue(testCoffeeMaker.editRecipe(testRecipe1, testRecipe2));</span>
+<span class="fc" id="L182">    Assert.assertEquals(testRecipe2, testCoffeeMaker.getRecipeForName(testRecipe2.getName()));</span>
+<span class="fc" id="L183">  }</span>
+
+  @Test
+  public void editRecipe1E4()
+  {
+<span class="fc" id="L188">    CoffeeMaker testCoffeeMaker = new CoffeeMaker();</span>
+<span class="fc" id="L189">    Recipe testRecipe1 = new Recipe();</span>
+<span class="fc" id="L190">    Recipe testRecipe2 = new Recipe();</span>
+
+<span class="fc" id="L192">    testRecipe1.setName(&quot;Coffee1&quot;);</span>
+<span class="fc" id="L193">    testRecipe1.setPrice(5);</span>
+<span class="fc" id="L194">    testRecipe1.setAmtCoffee(2);</span>
+<span class="fc" id="L195">    testRecipe1.setAmtMilk(2);</span>
+<span class="fc" id="L196">    testRecipe1.setAmtSugar(2);</span>
+<span class="fc" id="L197">    testRecipe1.setAmtChocolate(2);</span>
+
+<span class="fc" id="L199">    testRecipe2.setName(&quot;Coffee1&quot;);</span>
+<span class="fc" id="L200">    testRecipe2.setPrice(-5);</span>
+<span class="fc" id="L201">    testRecipe2.setAmtCoffee(-2);</span>
+<span class="fc" id="L202">    testRecipe2.setAmtMilk(-2);</span>
+<span class="fc" id="L203">    testRecipe2.setAmtSugar(-2);</span>
+<span class="fc" id="L204">    testRecipe2.setAmtChocolate(-2);</span>
+
+<span class="fc" id="L206">    Assert.assertTrue(testCoffeeMaker.addRecipe(testRecipe1));</span>
+<span class="fc" id="L207">    Assert.assertTrue(testCoffeeMaker.editRecipe(testRecipe1, testRecipe2));</span>
+<span class="fc" id="L208">  }</span>
+
+  @Test
+  public void addInventory1()
+  {
+<span class="fc" id="L213">    int coffee = 2;</span>
+<span class="fc" id="L214">    int milk = 2;</span>
+<span class="fc" id="L215">    int sugar = 2;</span>
+<span class="fc" id="L216">    int chocolate = 2;</span>
+<span class="fc" id="L217">    CoffeeMaker testCoffeeMaker = new CoffeeMaker();</span>
+
+<span class="fc" id="L219">    Assert.assertTrue(testCoffeeMaker.addInventory(coffee, milk, sugar, chocolate));</span>
+<span class="fc" id="L220">  }</span>
+
+  @Test
+  public void addInventory1E1_2()
+  {
+<span class="fc" id="L225">    int coffee = -2;</span>
+<span class="fc" id="L226">    int milk = -2;</span>
+<span class="fc" id="L227">    int sugar = -2;</span>
+<span class="fc" id="L228">    int chocolate = -2;</span>
+
+<span class="fc" id="L230">    Inventory testInventory = new Inventory();</span>
+
+<span class="fc" id="L232">    testInventory.setCoffee(coffee);</span>
+<span class="fc" id="L233">    testInventory.setMilk(milk);</span>
+<span class="fc" id="L234">    testInventory.setSugar(sugar);</span>
+<span class="fc" id="L235">    testInventory.setChocolate(chocolate);</span>
+
+<span class="fc" id="L237">    Assert.assertEquals(0L, testInventory.getCoffee());</span>
+<span class="fc" id="L238">    Assert.assertEquals(0L, testInventory.getMilk());</span>
+<span class="fc" id="L239">    Assert.assertEquals(0L, testInventory.getSugar());</span>
+<span class="fc" id="L240">    Assert.assertEquals(0L, testInventory.getChocolate());</span>
+
+<span class="fc" id="L242">    System.out.println(testInventory.toString());</span>
+<span class="fc" id="L243">  }</span>
+
+  @Test
+  public void checkInventory1()
+  {
+<span class="fc" id="L248">    CoffeeMaker testCoffeeMaker = new CoffeeMaker();</span>
+<span class="fc" id="L249">    Inventory testInventory = testCoffeeMaker.checkInventory();</span>
+<span class="fc" id="L250">    int coffee = 15;</span>
+<span class="fc" id="L251">    int milk = 15;</span>
+<span class="fc" id="L252">    int sugar = 15;</span>
+<span class="fc" id="L253">    int chocolate = 15;</span>
+
+<span class="fc" id="L255">    Assert.assertEquals(chocolate, testInventory.getChocolate());</span>
+<span class="fc" id="L256">    Assert.assertEquals(coffee, testInventory.getCoffee());</span>
+<span class="fc" id="L257">    Assert.assertEquals(milk, testInventory.getMilk());</span>
+<span class="fc" id="L258">    Assert.assertEquals(sugar, testInventory.getSugar());</span>
+<span class="fc" id="L259">  }</span>
+
+  @Test
+  public void purchaseBeverage1()
+  {
+<span class="fc" id="L264">    CoffeeMaker testCoffeeMaker = new CoffeeMaker();</span>
+<span class="fc" id="L265">    Recipe testRecipe1 = new Recipe();</span>
+<span class="fc" id="L266">    int amountPaid = 20;</span>
+
+<span class="fc" id="L268">    testRecipe1.setName(&quot;Coffee1&quot;);</span>
+<span class="fc" id="L269">    testRecipe1.setPrice(5);</span>
+<span class="fc" id="L270">    testRecipe1.setAmtCoffee(2);</span>
+<span class="fc" id="L271">    testRecipe1.setAmtMilk(2);</span>
+<span class="fc" id="L272">    testRecipe1.setAmtSugar(2);</span>
+<span class="fc" id="L273">    testRecipe1.setAmtChocolate(2);</span>
+
+<span class="fc" id="L275">    Assert.assertTrue(testCoffeeMaker.addRecipe(testRecipe1));</span>
+<span class="fc" id="L276">    Assert.assertEquals(15L, testCoffeeMaker.makeCoffee(testRecipe1, amountPaid));</span>
+<span class="fc" id="L277">  }</span>
+
+  @Test
+  public void purchaseBeverage1S1()
+  {
+<span class="fc" id="L282">    CoffeeMaker testCoffeeMaker = new CoffeeMaker();</span>
+<span class="fc" id="L283">    Recipe testRecipe1 = new Recipe();</span>
+<span class="fc" id="L284">    int amountPaid = 6;</span>
+
+<span class="fc" id="L286">    testRecipe1.setName(&quot;Coffee1&quot;);</span>
+<span class="fc" id="L287">    testRecipe1.setPrice(5);</span>
+<span class="fc" id="L288">    testRecipe1.setAmtCoffee(1);</span>
+<span class="fc" id="L289">    testRecipe1.setAmtMilk(2);</span>
+<span class="fc" id="L290">    testRecipe1.setAmtSugar(2);</span>
+<span class="fc" id="L291">    testRecipe1.setAmtChocolate(2);</span>
+
+<span class="fc" id="L293">    Assert.assertTrue(testCoffeeMaker.addRecipe(testRecipe1));</span>
+<span class="fc" id="L294">    Assert.assertEquals(1L, testCoffeeMaker.makeCoffee(testRecipe1, amountPaid));</span>
+<span class="fc" id="L295">  }</span>
+
+  @Test
+  public void purchaseBeverage1S2()
+  {
+<span class="fc" id="L300">    CoffeeMaker testCoffeeMaker = new CoffeeMaker();</span>
+<span class="fc" id="L301">    Recipe testRecipe1 = new Recipe();</span>
+<span class="fc" id="L302">    int amountPaid = 6;</span>
+
+<span class="fc" id="L304">    testRecipe1.setName(&quot;Coffee1&quot;);</span>
+<span class="fc" id="L305">    testRecipe1.setPrice(5);</span>
+<span class="fc" id="L306">    testRecipe1.setAmtCoffee(1);</span>
+<span class="fc" id="L307">    testRecipe1.setAmtMilk(2);</span>
+<span class="fc" id="L308">    testRecipe1.setAmtSugar(2);</span>
+<span class="fc" id="L309">    testRecipe1.setAmtChocolate(2);</span>
+
+<span class="fc" id="L311">    Assert.assertTrue(testCoffeeMaker.addRecipe(testRecipe1));</span>
+<span class="fc" id="L312">    Assert.assertEquals(1L, testCoffeeMaker.makeCoffee(testRecipe1, amountPaid));</span>
+<span class="fc" id="L313">  }</span>
+
+  @Test
+  public void purchaseBeverage1E1()
+  {
+<span class="fc" id="L318">    CoffeeMaker testCoffeeMaker = new CoffeeMaker();</span>
+<span class="fc" id="L319">    Recipe testRecipe1 = new Recipe();</span>
+<span class="fc" id="L320">    int amountPaid = 10;</span>
+
+<span class="fc" id="L322">    testRecipe1.setName(&quot;Coffee1&quot;);</span>
+<span class="fc" id="L323">    testRecipe1.setPrice(5);</span>
+<span class="fc" id="L324">    testRecipe1.setAmtCoffee(20);</span>
+<span class="fc" id="L325">    testRecipe1.setAmtMilk(2);</span>
+<span class="fc" id="L326">    testRecipe1.setAmtSugar(2);</span>
+<span class="fc" id="L327">    testRecipe1.setAmtChocolate(2);</span>
+
+<span class="fc" id="L329">    Assert.assertTrue(testCoffeeMaker.addRecipe(testRecipe1));</span>
+<span class="fc" id="L330">    Assert.assertEquals(10L, testCoffeeMaker.makeCoffee(testRecipe1, amountPaid));</span>
+<span class="fc" id="L331">  }</span>
+
+  @Test
+  public void purchaseBeverage1E2()
+  {
+<span class="fc" id="L336">    CoffeeMaker testCoffeeMaker = new CoffeeMaker();</span>
+<span class="fc" id="L337">    Recipe testRecipe1 = new Recipe();</span>
+<span class="fc" id="L338">    int amountPaid = 3;</span>
+
+<span class="fc" id="L340">    testRecipe1.setName(&quot;Coffee1&quot;);</span>
+<span class="fc" id="L341">    testRecipe1.setPrice(5);</span>
+<span class="fc" id="L342">    testRecipe1.setAmtCoffee(2);</span>
+<span class="fc" id="L343">    testRecipe1.setAmtMilk(2);</span>
+<span class="fc" id="L344">    testRecipe1.setAmtSugar(2);</span>
+<span class="fc" id="L345">    testRecipe1.setAmtChocolate(2);</span>
+
+<span class="fc" id="L347">    Assert.assertTrue(testCoffeeMaker.addRecipe(testRecipe1));</span>
+<span class="fc" id="L348">    Assert.assertEquals(3L, testCoffeeMaker.makeCoffee(testRecipe1, amountPaid));</span>
+<span class="fc" id="L349">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.6.0.201210061924</span>edu.towson.cosc603.coffeemaker (Apr 17, 2013 11:45:34 AM)</div></body></html>
