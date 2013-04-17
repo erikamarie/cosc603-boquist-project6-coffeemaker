@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
  *
  * Starts the console UI for the CoffeeMaker
  */
-public class Main {
+public class Main{
     private static CoffeeMaker coffeeMaker;
 
     public static void mainMenu() {
