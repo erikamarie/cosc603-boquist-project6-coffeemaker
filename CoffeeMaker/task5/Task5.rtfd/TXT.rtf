@@ -1,0 +1,576 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf320
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 TimesNewRomanPSMT;\f2\fswiss\fcharset0 ArialMT;
+}
+{\colortbl;\red255\green255\blue255;\red191\green191\blue191;}
+\margl1440\margr1440\vieww21340\viewh9600\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b\fs24 \cf0 \ul \ulc0 Task 5-Summing it All Up
+\b0 \ulnone \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \ul \ulc0 Task1-Code Coverage-Vending Machine\ulnone \
+The EclEmma coverage tool was quite useful in seeing which lines of code were not executed during test suite execution. When creating the test suite in Project 4, I attempted to cover all variations and instances of test cases, however, after running EclEmma to check for coverage, I missed some very simple lines of code. Regarding the Vending Machine project, I neglected to test any instance of using slots 'C' and 'D' completely! I just assumed testing a slot for expected values would suffice, not all possible slots. \
+\
+The weakness of this testing with purely code coverage is that one can execute every line of code in testing and still not find bugs. We've already been told there are bugs in the Vending Machine code, and while I have 100% coverage, I haven't found the bugs!\
+\
+\ul Task2-Writing Acceptance Tests-Coffee Maker\
+\pard\pardeftab720\ri-3600\sl276\slmult1\sa200\qc
+
+\f1\b\fs26 \cf0 \ulnone Acceptance Tests\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrt\brdrs\brdrw15\brdrcf2 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clwWidth1643\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth5325\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600\qc
+
+\fs24 \cf0 Test ID
+\b0 \cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\qc
+
+\b \cf0 Description
+\b0 \cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\qc
+
+\b \cf0 Expected Results
+\b0 \cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\qc
+
+\b \cf0 Actual Results
+\b0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 checkOptions0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: None\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Welcome to the CoffeeMaker!\
+\
+1. Add a recipe\
+2. Delete a recipe\
+3. Edit a recipe\
+4. Add inventory\
+5. Check inventory\
+6. Make coffee\
+0. Exit\
+\
+Please press the number that corresponds to what you would like the coffee maker to do.\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 addRecipe1\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: Run CoffeeMaker\'a0\uc0\u8232 Enter: Menu option 1, "Add a recipe "\u8232 Name: Coffee\u8232 Price: 50\u8232 Coffee: 3\u8232 Milk: 1\u8232 Sugar: 1\u8232 Chocolate: 0\u8232 Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Coffee successfully added.\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \'a0\
+\pard\intbl\itap1\pardeftab720\ri-3600\sl276\slmult1\sa200
+\cf0 \
+\
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 addRecipe1E1\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 PreCondition: Run CoffeeMaker and three recipes already in system\
+Enter: Menu option 1, "Add a recipe "\uc0\u8232 Name: Coffee\u8232 Price: 50\u8232 Coffee: 3\u8232 Milk: 1\u8232 Sugar: 1\u8232 Chocolate: 0\u8232 Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Coffee could not be added\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 addRecipe1E2\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 PreCondition: Run CoffeeMaker\
+Enter: Menu option 1, "Add a recipe "\uc0\u8232 Name: Coffee\u8232 Price: $%\u8232 Coffee: 3\u8232 Milk: 1\u8232 Sugar: 1\u8232 Chocolate: 0\u8232 Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Please input an integer\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 addRecipe1E3\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 PreCondition: Run CoffeeMaker\
+Enter: Menu option 1, "Add a recipe "\uc0\u8232 Name: Coffee\u8232 Price: 1\u8232 Coffee: $\u8232 Milk: #\u8232 Sugar: %\u8232 Chocolate: ^\u8232 Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Please enter an integer\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 addRecipe1E4\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 PreCondition: Run CoffeeMaker\
+Enter: Menu option 1, "Add a recipe "\uc0\u8232 Name: Coffee\u8232 Price: 2\u8232 Coffee: -1\u8232 Milk: -1\u8232 Sugar: -4\u8232 Chocolate: -5\u8232 Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 (Note: Not included)\
+Please enter a positive integer\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 addRecipe1E5\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 PreCondition: Run CoffeeMaker and recipe with same name must exist\
+Enter: Menu option 1, "Add a recipe "\uc0\u8232 Name: Coffee\u8232 Price: 1\u8232 Coffee: 3\u8232 Milk: 1\u8232 Sugar: 4\u8232 Chocolate: 5\u8232 Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Coffee could not be added\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 deleteRecipe1\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: addRecipe1 has run successfully\uc0\u8232 Enter: Menu option 2, "Delete a recipe "\u8232 Select: Coffee\u8232 Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Successfully deleted\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \'a0\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 deleteRecipe1E1\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: addRecipe1 has run successfully\uc0\u8232 Enter: Menu option 2, "Delete a recipe "\u8232 Select: 5\u8232 Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 (Note: not included, breaks)\
+Number out of bounds\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 deleteRecipe1E2\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: addRecipe1 has run successfully\uc0\u8232 Enter: Menu option 2, "Delete a recipe "\u8232 Select: \'93a\'94\u8232 Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Please input an integer\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 deleteRecipe1E3\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: addRecipe1 has run successfully\uc0\u8232 Enter: Menu option 2, "Delete a recipe "\u8232 Select: null\u8232 Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Null could not be deleted\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 editRecipe1\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: addRecipe1 has run successfully\'a0\uc0\u8232 Enter: Menu option 3, "Edit a recipe "\u8232 Select: Coffee\'a0\u8232 Price: 50\u8232 Coffee: 3\u8232 Milk: 1\u8232 Sugar: 1\u8232 Chocolate: 0\'a0\u8232 Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Coffee successfully added.\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \'a0\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 editRecipe1E1\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: addRecipe1 has run successfully\'a0\uc0\u8232 Enter: Menu option 3, "Edit a recipe "\u8232 Select: \'935\'94 \u8232 Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 (Note: not included, breaks)\
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Number out of bounds\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 editRecipe1E2\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: addRecipe1 has run successfully\'a0\uc0\u8232 Enter: Menu option 3, "Edit a recipe "\u8232 Select: \'93$\'94\u8232 Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Please input an integer\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 editRecipe1E3\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: addRecipe1 has run successfully\'a0\uc0\u8232 Enter: Menu option 3, "Edit a recipe "\u8232 Select: Coffee\'a0\u8232 Price: $\u8232 Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Please input an integer\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 editRecipe1E4\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: addRecipe1 has run successfully\'a0\uc0\u8232 Enter: Menu option 3, "Edit a recipe "\u8232 Name: Coffee\u8232 Price: 1\u8232 Coffee: $\u8232 Milk: #\u8232 Sugar: %\u8232 Chocolate: ^\u8232 Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Please enter an integer\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 editRecipe1E5\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: addRecipe1 has run successfully\'a0\uc0\u8232 Enter: Menu option 3, "Edit a recipe "\u8232 Select: Coffee\'a0\u8232 Price: 1\u8232 Coffee: -2\u8232 Milk: 1\u8232 Sugar: 1\u8232 Chocolate: 0\'a0\u8232 Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 (Note: Not included)\
+Please enter a positive integer\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 editRecipe1E6\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: addRecipe1 has run successfully\'a0\uc0\u8232 Enter: Menu option 3, "Edit a recipe "\u8232 Select: Null\u8232 Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Null could not be edited\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 addInventory1\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: Run CoffeeMaker\
+Enter: Menu option 4,  \'93Add Inventory\'94\
+Coffee: 3\uc0\u8232 Milk: 1\u8232 Sugar: 1\u8232 Chocolate: 0\'a0\
+Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Inventory successfully added\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 addInventory1E1.1\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: Run CoffeeMaker\
+Enter: Menu option 4,  \'93Add Inventory\'94\
+Coffee: #\
+Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Please enter an integer\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 addInventory1E1.2\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: Run CoffeeMaker\
+Enter: Menu option 4,  \'93Add Inventory\'94\
+Coffee: -1\
+Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 (Note: Not included)\
+Please enter a positive integer\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 addInventory1E2\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: Run CoffeeMaker\
+Enter: Menu option 4,  \'93Add Inventory\'94\
+Coffee: A\
+Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Please input an integer\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 checkInventory1\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: Run CoffeeMaker\
+Enter: Menu option 5, \'93Check Inventory\'94\
+Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Coffee: 15\
+Milk: 15\
+Sugar: 15\
+Chocolate: 15\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 purchaseBeverage1\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: Run CoffeeMaker\
+Enter: Menu option 6 \'93Make coffee\'94\
+Select: Coffee\
+Amount: 60\
+Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Your change is: 10\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 purchaseBeverage1S1\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: Run CoffeeMaker and inventory has enough items required to complete recipe, cost of recipe is 5\
+Enter: Menu option 6 \'93Make coffee\'94\
+Select: Coffee\
+Amount: 6\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Your change is: 1\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 purchaseBeverage1S2\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: Run CoffeeMaker and cost of recipe is 5\
+Enter: Menu option 6 \'93Make coffee\'94\
+Select: Coffee\
+Amount: 6\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Your change is: 1\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 purchaseBeverage1E1\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: Run CoffeeMaker and inventory has less items than required to complete recipe\
+Enter: Menu option 6 \'93Make coffee\'94\
+Select: Coffee\
+Amount: 60\
+Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Your change is: 60\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \
+\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trwWidth12885\trftsWidth3 \trbrdrl\brdrs\brdrw15\brdrcf2 \trbrdrb\brdrs\brdrw15\brdrcf2 \trbrdrr\brdrs\brdrw15\brdrcf2 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2990\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2927\clftsWidth3 \clbrdrt\brdrs\brdrw15\brdrcf2 \clbrdrl\brdrs\brdrw15\brdrcf2 \clbrdrb\brdrs\brdrw15\brdrcf2 \clbrdrr\brdrs\brdrw15\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs20 \cf0 purchaseBeverage1E2\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600\sb100\sa100
+\cf0 Precondition: Run CoffeeMaker and recipe exists with a cost of 5\
+Enter: Menu option 6 \'93Make coffee\'94\
+Select: Coffee\
+Amount: 3\
+Return to main menu.\'a0\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+\cf0 Your change is: 3\cell 
+\pard\intbl\itap1\pardeftab720\ri-3600
+
+\fs18 \cf0 \cell \lastrow\row
+\pard\pardeftab720\ri-3600\sb100\sa100
+
+\f2 \cf0 \'a0\
+\
+\pard\pardeftab720\ri-3600\sb100\sa100
+
+\f1\fs24 \cf0 \ul \ulc0 Task3-Acceptance Testing-Coffee Maker\
+\ulnone Please see Coffee Maker project /reqs/CoffeeMaker/src/edu.towson.cosc603.coffeemaker/index.html to open the below exported session
+\f0 {{\NeXTGraphic Screen Shot 2013-04-17 at 5.18.43 PM.png \width20640 \height5960
+}¬}
+\f1\fs22 \
+\pard\pardeftab720\ri-3600\sl276\slmult1\sa200
+
+\fs24 \cf0 \ul \ulc0 Task4-Mutation Testing-Coffee Maker\
+\ulnone While I was unable to to successfully set up the mutation testing, from viewing Dr Dehlinger run the mutation testing and display the alive mutants and how to kill them, it is clear that mutation testing is very useful for creating unit tests. Creating unit tests can seem simple when testing for normal uses of the CoffeeMaker project, however, if operators are reversed or various inputs are changed to mutant version, it is clear that the tests will fail if they are only checking to see if various units passed or fail. Mutant testing forces the developer to create tests that are more specific in checking input and expected output.\
+\ul Task5-Summing it All Up\
+\ulnone What I Learned\
+I learned a lot in this project. While I thought I covered every possible test for the CoffeeMaker, Recipe, and Inventory classes, using the EclEmma tool showed that I didn't have as good of coverage as I thought. I learned that testing from requirements does not cover every line of code, and using testing coverage tools can help in generating good test cases.\
+I also learned that creating acceptance tests is very difficult, especially when considering that the program is waiting for user input. For this project it was almost impossible to test for every case of invalid user input, and when testing the Main class, there was a lot of output to the console, which in my opinion makes for messy testing.\
+I also learned that even when following directions almost exactly, when dealing with software and plugins that are unfamiliar, there are bound to be issues ran into. I learned to pay better attention in class when the professor shows how to use software, and to start especially early when working in a new environment. Following this theme, always use source control! When I was attempting to import a new version of the CoffeeMaker project, I neglected to push my work to Google Code, resulting in lost files\'85.again! Forunately, I had my testing compiled files and was able to use JD-GUI to decompile them and get some, albeit messy, versions of my original code.\
+Liked/Disliked\
+I really liked the EclEmma plugin. This tool provided a very intuitive way to see how much code was covered in my unit tests. As I created more tests, I was able to re-evaluate my coverage and continue testing. This was a very good tool and I will definitely continue to use this plugin when creating unit tests.\
+Muclipse I didn't care for\'85mainly because I couldn't get it working.What was demonstrated in class, after correct configuration, looked very useful for testing unanticipated cases and for testing just how efficient the unit tests were. That being said, I think there should be much easier ways for setting up mutant testing. Perhaps a single package including all the libraries necessary for creating mutants and testing against them with jUnit. Although I was unable to complete the mutant testing, I will definitely be continuing to work with Muclipse so I can correctly set it up and witness for myself how mutant testing can better my unit testing.
+\fs22 \
+}
